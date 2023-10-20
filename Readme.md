@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Катеринка Барбаянова](https://up.htmlacademy.ru/htmlcss/38/user/963901).
-* Наставник: [Олег Зайзев](https://htmlacademy.ru/profile/ozi).
+* Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
 
 ---
 
