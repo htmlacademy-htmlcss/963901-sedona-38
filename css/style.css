@@ -10,20 +10,17 @@ html {
     padding: 0;
 }
 
-ul {
-    list-style: none;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-	display: inline-block;
-}
 
-img {
-	display: block;
-}
 
+
+
+
+
+
+
+
+/*---	Липкий хедр   ---*/
 html,
 body {
     height: 100%;
@@ -48,13 +45,46 @@ body {
     flex-grow: 1;
 }
 
-.btns-list {
+
+
+
+
+
+
+
+
+
+
+/*---   Общее   ---*/
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+	display: block;
+}
+
+img {
+	display: block;
+}
+
+fieldset {
+	border: none;
+}
+
+.btns {
+	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
-	padding: 8px 50px;
+	padding: 8px;
 	border-radius: 4px;
 	border: none;
+	display: inline-block;
+	text-align: center;
 }
 
 .visually-hidden {
@@ -70,11 +100,23 @@ body {
 	overflow: hidden;
   }
 
-/*---	header   ---*/
-
 .container_inner {
 	width: 1060px;
 	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*---	header   ---*/
+
+.header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -111,6 +153,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
+	margin-right: 20px;
 }
 
 .navigation-user-item-link {
@@ -121,19 +164,35 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	background: #756157;
+	width: 160px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---	main   ---*/
 
 	/*---	commom style   ---*/
 
+/*---   Контейнер для заголовкка и описания в начале каждой секции   ---*/
 .section__text-container {
 	width: 655px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.section-title {
+/*---   Заголовок h2  в секциях   ---*/
+h2 {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
@@ -141,18 +200,30 @@ body {
 	margin-bottom: 25px;
 }
 
-.title-list {
+/*---   Заголовок h3 в списках   ---*/
+h3 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
 	text-transform: uppercase;
-	margin-bottom: 30px;
 }
 
-.text-list {
+/*---   p в списках   ---*/
+.text__inner-list {
 	font-size: 18px;
 	line-height: 21px;
+	margin-top: 30px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*---	Стили для главной картинки   ---*/
 
@@ -162,8 +233,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 51px 0 82px;
+}
+
+	/*---	section-top-index - контейнер для стилизации поднятия секции ближе к header   ---*/
+.section-top-index {
 	background: no-repeat;
 	position: relative;
+	top: -4px;
+	z-index: -5;
 }
 
 .top-img {
@@ -178,6 +255,14 @@ body {
 	position: absolute;
 	bottom: 0;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -211,7 +296,7 @@ body {
 	height: 2px;
 	background: rgba(0, 0, 0, 0.30);
 	display: block;
-	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .advantages-list-item:nth-child(4) {
@@ -228,6 +313,16 @@ body {
 .advantages-list-item:last-child .under-line {
 	background-color: rgba(255, 255, 255, 0.30);
 }
+
+
+
+
+
+
+
+
+
+
 
 /*---	Описание сервисов   ---*/
 
@@ -257,6 +352,18 @@ body {
 	background-color: transparent;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*---	Поиск отелей   ---*/
+
 .search-hotel {
 	text-align: center;
 	width: 592px;
@@ -267,8 +374,11 @@ body {
 .search-hotel-btn {
 	font-size: 20px;
 	line-height: 36px;
+	width: 376px;
+	margin: 0 auto;
 	margin-top: 54px;
 	background-color: #756157;
+
 }
 
 .form {
@@ -276,12 +386,13 @@ body {
 	padding-top: 96px;
 	padding-bottom: 104px;
 	background: lightgray -0.677px 0px / 100.113% 193.478% no-repeat;
+	color: #fff;
 }
 
 .text-container__form {
 	width: 475px;
 	margin: 0 auto;
-	color: #fff;
+	color: inherit;
 	text-align: center;
 	margin-bottom: 54px;
 }
@@ -314,15 +425,487 @@ body {
 	color: #fff;
 	font-size: 20px;
 	line-height: 36px;
+	width: 232px;
 	background-color: #82B3D3;
 	border-radius: 0px 4px 4px 0px;
 }
+
+/*---	Стили для ввода email на странице Гостиницы   ---*/
+.form-in-catalog {
+	background: transparent;
+	color: #000;
+}
+
+.form-in-catalog .form-email-input {
+	background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---	Фильтр на странице Каталога   ---*/
+
+.filter {
+	margin-bottom: 50px;
+	padding: 35px 0 70px 0;
+	background: no-repeat;
+	color: #fff;
+}
+
+.title-filter {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 78px;
+	margin-bottom: 8px;
+}
+
+	/*----	Хлебный крошки   ---*/
+.bread-crumbs-list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.bread-crumbs-list-item {
+	position: relative;
+}
+
+.bread-crumbs-list-item:not(:first-of-type):before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: -20px;
+	width: 8px;
+	height: 8px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(225deg);
+}
+
+/*---	Контейнер для расстановки левой и правой части фильтров   ---*/
+.form-filter-catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.form-filter-catalog legend {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: capitalize;
+	margin-bottom: 32px;
+}
+
+.left-fitlers,
+.right-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 70px;
+}
+
+/*---	Стильзация чек-боксов и радиокнопок   ---*/
+.infrastructure-list-item + .infrastructure-list-item,
+.type-of-home-list-item + .type-of-home-list-item {
+	margin-top: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+	/*---	Добавляем отступы к соседствующим меткам   ---*/
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	display: inline-block;
+	position: relative;
+	padding-left: 34px;
+	cursor: pointer;
+}
+
+	/*---	Рисуем новые элементы перед label   ---*/
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+	border-radius: 4px;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+	border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+}
+
+	/*---	Рисуем галочку и кружок   ---*/
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+	left: 4px;
+	top: 9px;
+	width: 12px;
+	height: 9px;
+	border-left: 2px solid #3F5E72;
+	border-bottom: 2px solid #3F5E72;
+	transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+	left: 5px;
+	top: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #3F5E72;
+}
+
+	/*---	Скрываем галочку и кружок при нажатии   ---*/
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+/*---	Стили для правой части кнопок: цена и кнопки   ---*/
+.filter-price-list {
+	display: flex;
+	gap: 2px;
+	margin-bottom: 36px;
+}
+
+.filter-price-list-item {
+	width: 143px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 12px 20px;
+}
+
+.filter-price-item-input-min {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.filter-price-item-input-max {
+	border-radius: 0px 4px 4px 0px;
+}
+
+.filter-price-list-item input {
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	width: 80px;
+	border: none;
+}
+
+.filter-price-list-item label {
+	color: #000;
+	opacity: 0.3;
+}
+
+.form-filter-catalog-btns {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+
+/*---Кнопка Принять---*/
+.btn-aprove {
+	width: 190px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px; 
+	background: #82B3D3;
+}
+
+/*---Кнопка Сбросить---*/
+.btn-reset {
+	background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---	Результаты поиска   ---*/
+
+	/*---	Контейнер header для хранения числового результата   ---*/
+.container_inner-filter-result {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 47px;
+}
+
+.text-filter-result {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+	/*---	Дополнительный div для хранения фильтров для найденных карточек   ---*/
+.catalog-filter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 70px;
+}
+
+.select-cards {
+	width: 290px;
+	border-radius: 4px;
+	border: 2px solid #E5E5E5;
+
+	font-family: PT Sans;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	padding: 14px 20px;
+}
+
+	/*---	Список кнопок для отображения списка: грид, лист ...   ---*/
+.view-cards-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.view-cards-item-grid {
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url("../img/grid.png");
+	border-radius: 4px;
+	border: 2px solid #E5E5E5;
+}
+
+.view-cards-item-card {
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url("../img/card.png");
+	border-radius: 4px;
+	border: 2px solid #E5E5E5;
+}
+
+.view-cards-item-list {
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url("../img/list.png");
+	border-radius: 4px;
+	border: 2px solid #E5E5E5;
+}
+
+.view-cards-active {
+	border: 2px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---	Карточки - результат поиска   ---*/
+.filter-result {
+	margin-bottom: 60px;
+}
+	/*---	Отображение - таблица   ---*/
+
+	/*---	карточки   ---*/
+
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #E6E6E6;;
+}
+
+.catalog-list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 340px;
+	padding: 20px;
+	border-radius: 4px;
+	border: 1px solid #E6E6E6;
+}
+
+.catalog-item-img {
+	order: -1;
+}
+
+.catalog-item-price {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+	/*---	Кнопки Подробнее и Избранное   ---*/
+.buttons-list,
+.rang-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.more {
+	background-color: #756157;
+	font-size: 16px;
+	line-height: 20px;
+	width: 140px;
+}
+
+.selected {
+	background-color: #82B3D3;
+	font-size: 16px;
+	line-height: 20px;
+	width: 140px;
+}
+
+.selected-active {
+	background-color: #7DB54F;
+}
+
+.stars-list {
+	display: flex;
+	gap: 6px;
+}
+
+.tex-rang {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	background: #F2F2F2;
+	padding: 9px 0;
+	width: 140px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---	Пагинация   ---*/
+
+.pages-list {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.pages-item {
+	width: 60px;
+	height: 60px;
+	border-radius: 4px;
+	background: #82B3D3;
+}
+
+.pages-item-link {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding: 12px 0;
+}
+
+.pages-item-link-active {
+	background: #F2F2F2;
+	color: #000;
+}
+
+.pages-item-dots {
+	background-color: transparent;
+	color: #000;
+	text-align: center;
+	padding: 12px 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*---	footer   ---*/
 
 .footer {
-	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	padding: 40px 0 30px;
 }
 
