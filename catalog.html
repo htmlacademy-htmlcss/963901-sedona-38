@@ -127,207 +127,205 @@
 
 			<!--Результаты потска: селект-бокс, вариалнты изображения, карточки, pages-->
 			<section class="filter-result" data-test="catalog">
-				<div class="container_inner">
-					<!--Контейнер для хранения числового результата-->
-					<header class="container_inner-filter-result">
-						<h2 class="visually-hidden">Каталог гостиниц города Седона</h2>
-						<p class="text-filter-result">Найдено гостиниц: 38</p>
-						<!--Дополнительный div для хранения фильтров для найденных карточек-->
-						<div class="catalog-filter">
-							<form action="#" method="post">
-								<select class="select-cards" name="filter-hotels">
-									<option value="min">Сначала дешевые</option>
-									<option value="max">Сначала дорогие</option>
-								</select>
-							</form>
-							<ul class="view-cards-list list_style_none">
-								<li class="view-cards-list-item">
-									<button class="view-cards-item-grid view-cards-active" type="button">
-										<span class="visually-hidden">Таблица</span>
-									</button>
-								</li>
-								<li class="view-cards-list-item">
-									<button class="view-cards-item-card" type="button">
-										<span class="visually-hidden">Карточки</span>
-									</button>
-								</li>
-								<li class="view-cards-list-item">
-									<button class="view-cards-item-list" type="button">
-										<span class="visually-hidden">Список</span>
-									</button>
-								</li>
-							</ul>
+				<!--Контейнер для хранения числового результата-->
+				<header class="container_inner-filter-result">
+					<h2 class="visually-hidden">Каталог гостиниц города Седона</h2>
+					<p class="text-filter-result">Найдено гостиниц: 38</p>
+					<!--Дополнительный div для хранения фильтров для найденных карточек-->
+					<div class="catalog-filter">
+						<form action="#" method="post">
+							<select class="select-cards" name="filter-hotels">
+								<option value="min">Сначала дешевые</option>
+								<option value="max">Сначала дорогие</option>
+							</select>
+						</form>
+						<ul class="view-cards-list list_style_none">
+							<li class="view-cards-list-item">
+								<button class="view-cards-item-grid view-cards-active" type="button">
+									<span class="visually-hidden">Таблица</span>
+								</button>
+							</li>
+							<li class="view-cards-list-item">
+								<button class="view-cards-item-card" type="button">
+									<span class="visually-hidden">Карточки</span>
+								</button>
+							</li>
+							<li class="view-cards-list-item">
+								<button class="view-cards-item-list" type="button">
+									<span class="visually-hidden">Список</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<!--Список карточек-->
+				<ul class="catalog-list list_style_none">
+					<li class="catalog-list-item">
+						<h3 class="title-list">Amara Resort & Spa</h3>
+						<img class="catalog-item-img" src="img/hotel-1.jpg" width="300px" height="212px" alt="Звездное небо через горы">
+						<div class="catalog-item-price">
+							<p class="text-list">Гостиница</p>
+							<p class="text-list">От 4000 ₽</p>
 						</div>
-					</header>
-					<!--Список карточек-->
-					<ul class="catalog-list list_style_none">
-						<li class="catalog-list-item">
-							<h3 class="title-list">Amara Resort & Spa</h3>
-							<img class="catalog-item-img" src="img/hotel-1.jpg" width="300px" height="212px" alt="Звездное небо через горы">
-							<div class="catalog-item-price">
-								<p class="text-list">Гостиница</p>
-								<p class="text-list">От 4000 ₽</p>
-							</div>
-							<ul class="buttons-list list_style_none">
-								<li class="buttons-list-item">
-									<a class="btns more">Подробнее</a>
-								</li>
-								<li class="buttons-list-item">
-									<button class="btns selected" type="button">В избранное</button>
-								</li>
-							</ul>
-							<ul class="rang-list list_style_none">
-								<!--Начало карточки-->
-								<li class="rang-list-item">
-									<ul class="stars-list list_style_none">
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-									</ul>
-								</li>
-								<li class="rang-list-item">
-									<p class="tex-rang">Рейтинг: 8,5</p>
-								</li>
-							</ul>
-						</li>
+						<ul class="buttons-list list_style_none">
+							<li class="buttons-list-item">
+								<a class="btns more">Подробнее</a>
+							</li>
+							<li class="buttons-list-item">
+								<button class="btns selected" type="button">В избранное</button>
+							</li>
+						</ul>
+						<ul class="rang-list list_style_none">
+							<!--Начало карточки-->
+							<li class="rang-list-item">
+								<ul class="stars-list list_style_none">
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+								</ul>
+							</li>
+							<li class="rang-list-item">
+								<p class="tex-rang">Рейтинг: 8,5</p>
+							</li>
+						</ul>
+					</li>
 
-						<!--Начало карточки-->
-						<li class="catalog-list-item">
-							<h3 class="title-list">Villas at Poco Diablo</h3>
-							<img class="catalog-item-img" src="img/hotel-2.jpg" width="300px" height="212px" alt="Горы на фоне радуги">
-							<div class="catalog-item-price">
-								<p class="text-list">Гостиница</p>
-								<p class="text-list">От 5000 ₽</p>
-							</div>
-							<ul class="buttons-list list_style_none">
-								<li class="buttons-list-item">
-									<a class="btns more">Подробнее</a>
-								</li>
-								<li class="buttons-list-item">
-									<button class="btns selected selected-active" type="button">В избранное</button>
-								</li>
-							</ul>
-							<ul class="rang-list list_style_none">
-								<li class="rang-list-item">
-									<ul class="stars-list list_style_none">
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-									</ul>
-								</li>
-								<li class="rang-list-item">
-									<p class="tex-rang">Рейтинг: 9,2</p>
-								</li>
-							</ul>
-						</li>
+					<!--Начало карточки-->
+					<li class="catalog-list-item">
+						<h3 class="title-list">Villas at Poco Diablo</h3>
+						<img class="catalog-item-img" src="img/hotel-2.jpg" width="300px" height="212px" alt="Горы на фоне радуги">
+						<div class="catalog-item-price">
+							<p class="text-list">Гостиница</p>
+							<p class="text-list">От 5000 ₽</p>
+						</div>
+						<ul class="buttons-list list_style_none">
+							<li class="buttons-list-item">
+								<a class="btns more">Подробнее</a>
+							</li>
+							<li class="buttons-list-item">
+								<button class="btns selected selected-active" type="button">В избранное</button>
+							</li>
+						</ul>
+						<ul class="rang-list list_style_none">
+							<li class="rang-list-item">
+								<ul class="stars-list list_style_none">
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+								</ul>
+							</li>
+							<li class="rang-list-item">
+								<p class="tex-rang">Рейтинг: 9,2</p>
+							</li>
+						</ul>
+					</li>
 
-						<!--Начало карточки-->
-						<li class="catalog-list-item">
-							<h3 class="title-list">Desert Quail Inn</h3>
-							<img class="catalog-item-img" src="img/hotel-3.jpg" width="300px" height="212px" alt="Горы">
-							<div class="catalog-item-price">
-								<p class="text-list">Гостиница</p>
-								<p class="text-list">От 2500 ₽</p>
-							</div>
-							<ul class="buttons-list list_style_none">
-								<li class="buttons-list-item">
-									<a class="btns more">Подробнее</a>
-								</li>
-								<li class="buttons-list-item">
-									<button class="btns selected" type="button">В избранное</button>
-								</li>
-							</ul>
-							<ul class="rang-list list_style_none">
-								<li class="rang-list-item">
-									<ul class="stars-list list_style_none">
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-									</ul>
-								</li>
-								<li class="rang-list-item">
-									<p class="tex-rang">Рейтинг: 6,9</p>
-								</li>
-							</ul>
-						</li>
+					<!--Начало карточки-->
+					<li class="catalog-list-item">
+						<h3 class="title-list">Desert Quail Inn</h3>
+						<img class="catalog-item-img" src="img/hotel-3.jpg" width="300px" height="212px" alt="Горы">
+						<div class="catalog-item-price">
+							<p class="text-list">Гостиница</p>
+							<p class="text-list">От 2500 ₽</p>
+						</div>
+						<ul class="buttons-list list_style_none">
+							<li class="buttons-list-item">
+								<a class="btns more">Подробнее</a>
+							</li>
+							<li class="buttons-list-item">
+								<button class="btns selected" type="button">В избранное</button>
+							</li>
+						</ul>
+						<ul class="rang-list list_style_none">
+							<li class="rang-list-item">
+								<ul class="stars-list list_style_none">
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+								</ul>
+							</li>
+							<li class="rang-list-item">
+								<p class="tex-rang">Рейтинг: 6,9</p>
+							</li>
+						</ul>
+					</li>
 
-						<!--Начало карточки-->
-						<li class="catalog-list-item">
-							<h3 class="title-list">GreenTree Inn</h3>
-							<img class="catalog-item-img" src="img/hotel-4.jpg" width="300px" height="212px" alt="Горы на фоне звездного неба">
-							<div class="catalog-item-price">
-								<p class="text-list">Гостиница</p>
-								<p class="text-list">От 1500 ₽</p>
-							</div>
-							<ul class="buttons-list list_style_none">
-								<li class="buttons-list-item">
-									<a class="btns more">Подробнее</a>
-								</li>
-								<li class="buttons-list-item">
-									<button class="btns selected" type="button">В избранное</button>
-								</li>
-							</ul>
-							<ul class="rang-list list_style_none">
-								<li class="rang-list-item">
-									<ul class="stars-list list_style_none">
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-										<li>
-											<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
-										</li>
-									</ul>
-								</li>
-								<li class="rang-list-item">
-									<p class="tex-rang">Рейтинг: 5,0</p>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<ol class="pages-list list_style_none">
-						<li class="pages-item">
-							<a class="pages-item-link pages-item-link-active text_decoration_none" href="#">1</a>
-						</li>
-						<li class="pages-item">
-							<a class="pages-item-link text_decoration_none" href="#">2</a>
-						</li>
-						<li class="pages-item">
-							<a class="pages-item-link text_decoration_none" href="#">3</a>
-						</li>
-						<li class="pages-item">
-							<a class="pages-item-link text_decoration_none" href="#">4</a>
-						</li>
-						<li class="pages-item pages-item-dots">...</a>
-						</li>
-						<li class="pages-item">
-							<a class="pages-item-link text_decoration_none" href="#">10</a>
-						</li>
-					</ol>
-				</div>
+					<!--Начало карточки-->
+					<li class="catalog-list-item">
+						<h3 class="title-list">GreenTree Inn</h3>
+						<img class="catalog-item-img" src="img/hotel-4.jpg" width="300px" height="212px" alt="Горы на фоне звездного неба">
+						<div class="catalog-item-price">
+							<p class="text-list">Гостиница</p>
+							<p class="text-list">От 1500 ₽</p>
+						</div>
+						<ul class="buttons-list list_style_none">
+							<li class="buttons-list-item">
+								<a class="btns more">Подробнее</a>
+							</li>
+							<li class="buttons-list-item">
+								<button class="btns selected" type="button">В избранное</button>
+							</li>
+						</ul>
+						<ul class="rang-list list_style_none">
+							<li class="rang-list-item">
+								<ul class="stars-list list_style_none">
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+									<li>
+										<img src="img/star-rand.svg" width="18" height="17" alt="Звезда рейтинга">
+									</li>
+								</ul>
+							</li>
+							<li class="rang-list-item">
+								<p class="tex-rang">Рейтинг: 5,0</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ol class="pages-list list_style_none">
+					<li class="pages-item">
+						<a class="pages-item-link pages-item-link-active text_decoration_none" href="#">1</a>
+					</li>
+					<li class="pages-item">
+						<a class="pages-item-link text_decoration_none" href="#">2</a>
+					</li>
+					<li class="pages-item">
+						<a class="pages-item-link text_decoration_none" href="#">3</a>
+					</li>
+					<li class="pages-item">
+						<a class="pages-item-link text_decoration_none" href="#">4</a>
+					</li>
+					<li class="pages-item pages-item-dots">...</a>
+					</li>
+					<li class="pages-item">
+						<a class="pages-item-link text_decoration_none" href="#">10</a>
+					</li>
+				</ol>
 			</section>
 
 
