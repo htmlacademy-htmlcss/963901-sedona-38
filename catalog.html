@@ -13,7 +13,7 @@
 		<header class="header" data-test="header"> 
 			<nav class="navigation">
 				<a class="logo text_decoration_none" href="index.html">
-					<img class="logo-svg" src="img/logo.svg" width="140px" height="70px" alt="Логотип">
+					<img class="logo-svg" src="img/logo.svg" width="140" height="70" alt="Логотип">
 					<span class="visually-hidden">Логотип - ссыдка на главную страницу</span>
 				</a>
 				<ul class="navigation-list list_style_none">
@@ -133,7 +133,7 @@
 					<p class="text-filter-result">Найдено гостиниц: 38</p>
 					<!--Дополнительный div для хранения фильтров для найденных карточек-->
 					<div class="catalog-filter">
-						<form action="#" method="post">
+						<form method="get" action="https://echo.htmlacademyru" >
 							<select class="select-cards" name="filter-hotels">
 								<option value="min">Сначала дешевые</option>
 								<option value="max">Сначала дорогие</option>
@@ -162,7 +162,7 @@
 				<ul class="catalog-list list_style_none">
 					<li class="catalog-list-item">
 						<h3 class="title-list">Amara Resort & Spa</h3>
-						<img class="catalog-item-img" src="img/hotel-1.jpg" width="300px" height="212px" alt="Звездное небо через горы">
+						<img class="catalog-item-img" src="img/hotel-1.jpg" width="300" height="212" alt="Звездное небо через горы">
 						<div class="catalog-item-price">
 							<p class="text-list">Гостиница</p>
 							<p class="text-list">От 4000 ₽</p>
@@ -202,7 +202,7 @@
 					<!--Начало карточки-->
 					<li class="catalog-list-item">
 						<h3 class="title-list">Villas at Poco Diablo</h3>
-						<img class="catalog-item-img" src="img/hotel-2.jpg" width="300px" height="212px" alt="Горы на фоне радуги">
+						<img class="catalog-item-img" src="img/hotel-2.jpg" width="300" height="212" alt="Горы на фоне радуги">
 						<div class="catalog-item-price">
 							<p class="text-list">Гостиница</p>
 							<p class="text-list">От 5000 ₽</p>
@@ -241,7 +241,7 @@
 					<!--Начало карточки-->
 					<li class="catalog-list-item">
 						<h3 class="title-list">Desert Quail Inn</h3>
-						<img class="catalog-item-img" src="img/hotel-3.jpg" width="300px" height="212px" alt="Горы">
+						<img class="catalog-item-img" src="img/hotel-3.jpg" width="300" height="212" alt="Горы">
 						<div class="catalog-item-price">
 							<p class="text-list">Гостиница</p>
 							<p class="text-list">От 2500 ₽</p>
@@ -277,7 +277,7 @@
 					<!--Начало карточки-->
 					<li class="catalog-list-item">
 						<h3 class="title-list">GreenTree Inn</h3>
-						<img class="catalog-item-img" src="img/hotel-4.jpg" width="300px" height="212px" alt="Горы на фоне звездного неба">
+						<img class="catalog-item-img" src="img/hotel-4.jpg" width="300" height="212" alt="Горы на фоне звездного неба">
 						<div class="catalog-item-price">
 							<p class="text-list">Гостиница</p>
 							<p class="text-list">От 1500 ₽</p>
@@ -334,12 +334,13 @@
 					<h2>Подпишитесь на рассылку</h2>
 					<p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 				</div>
-				<form class="form-email" action="#" metod="post">
+				<form class="form-email" method="get" action="https://echo.htmlacademyru" >
 					<label class="visually-hidden" for="email">Гостиница</label>
 					<input class="form-email-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
 					<button class="btns form-email-btn" type="submit">Подписаться</button>
 				</form>
 			</section>
+		</main>
 
 		<footer class="footer container_inner" data-test="footer">
 			<ul class="social-media-list list_style_none">
