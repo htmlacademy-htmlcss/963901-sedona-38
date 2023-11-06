@@ -618,7 +618,7 @@ body {
 /*---	Фильтры на странице Каталога   ---*/
 
 .filters {
-	padding: 35px 70px 64px 70px;
+	padding: 35px 70px 73px 70px;
 	background: no-repeat;
 	background-size: cover;
 	background-color: #83B3D3;
@@ -789,7 +789,7 @@ input[type="radio"]:checked + label:after {
 .filter-price-list {
 	display: flex;
 	gap: 2px;
-	margin-bottom: 36px;
+	margin-bottom: 45px;
 }
 
 .filter-price-list-item {
@@ -824,8 +824,50 @@ input[type="radio"]:checked + label:after {
 	border-radius: 0px 4px 4px 0px;
 }
 
+.range-scale {
+	position: relative;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.3);
+}
 
+.range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #fff;
+}
 
+.range-toggle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	height: 20px;
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background-color: #82B3D3;
+}
+
+.range-toggle:focus {
+	background-color: #82B3D3;
+}
+
+.range-toggle:active {
+	background-color: #7f9177;
+}
+
+.toggle-min {
+	top: -8px;
+	left: 0;
+}
+  
+.toggle-max {
+	top: -8px;
+	right: 0;
+}
 
 
 
@@ -836,7 +878,6 @@ input[type="radio"]:checked + label:after {
 	flex-direction: column;
 	justify-content: flex-end;
 	gap: 32px;
-	padding-bottom: 5px;
 }
 
 	/*---	Кнопка Принять   ---*/
@@ -859,7 +900,7 @@ input[type="radio"]:checked + label:after {
 	line-height: 20px; 
 	width: 100%;
 	max-width: 190px;
-	padding: 8px 50px;
+	padding: 6px 50px;
 }
 
 
@@ -884,7 +925,7 @@ input[type="radio"]:checked + label:after {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 37px;
+	margin-bottom: 40px;
 }
 
 .text-filter-result {
@@ -914,6 +955,8 @@ input[type="radio"]:checked + label:after {
 	padding: 10px 12px;
 
 	font-family: inherit;
+
+	cursor: pointer;
 }
 
 	/*---	Список кнопок для отображения списка: грид, лист ...   ---*/
@@ -933,6 +976,8 @@ input[type="radio"]:checked + label:after {
 	background-image: url("../img/grid.png");
 	border-radius: 4px;
 	border: 2px solid #E5E5E5;
+
+	cursor: pointer;
 }
 
 .view-cards-item-card {
@@ -944,6 +989,8 @@ input[type="radio"]:checked + label:after {
 	background-image: url("../img/card.png");
 	border-radius: 4px;
 	border: 2px solid #E5E5E5;
+
+	cursor: pointer;
 }
 
 .view-cards-item-list {
@@ -955,6 +1002,8 @@ input[type="radio"]:checked + label:after {
 	background-image: url("../img/list.png");
 	border-radius: 4px;
 	border: 2px solid #E5E5E5;
+
+	cursor: pointer;
 }
 
 .view-cards-active {
@@ -1250,6 +1299,8 @@ input[type="radio"]:checked + label:after {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
+
+	cursor: pointer;
 }
 
 .start-date {
@@ -1325,7 +1376,7 @@ input[type="radio"]:checked + label:after {
 .btn-number,
 .number-count {
 	border: none;
-
+	cursor: pointer;
 }
 
 .number-min {
@@ -1584,3 +1635,32 @@ input[type="radio"]:checked + label:after {
 .pages-item-link:active {
 	background-color: #7f9177;
 }
+
+.footer-tel:hover {
+	color: #756157;
+}
+
+.footer-tel:focus {
+	color: #756157;
+}
+
+.footer-tel:active {
+	color: #7f9177;
+}
+
+.social-media-item-link:hover,
+.htmlacademy:hover {
+	opacity: 0.7;
+}
+
+.social-media-item-link:focus,
+.htmlacademy:focus {
+	opacity: 0.7;
+}
+
+.social-media-item-link:active,
+.htmlacademy:active {
+	background-color: #7f9177;
+	opacity: 1;
+}
+

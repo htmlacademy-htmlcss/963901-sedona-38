@@ -117,7 +117,16 @@
 								<label for="apartments-max-price">до</label>
 							</li>
 						</ul>
-						<input class="filter-price-range" type="range" name="volume" min="0" max="10000" value="9000" step="500">
+						<div class="range-scale">
+							<div class="range-bar" style="left: 0; width: 226px">
+								<button class="range-toggle toggle-min">
+									<span class="visually-hidden">Изменить минимальную цену</span>
+								</button>
+								<button class="range-toggle toggle-max">
+									<span class="visually-hidden">Изменить максимальную цену</span>
+								</button>
+							</div>
+						</div>
 					</fieldset>
 					<div class="form-filter-catalog-btns">
 						<button class="btns btn-aprove" type="submit">Применить</button>
