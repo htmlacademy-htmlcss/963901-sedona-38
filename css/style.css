@@ -542,8 +542,10 @@ body {
 	text-align: center;
 	background-position: 50% 0%;
 	padding: 96px 0 104px 0;
+	background-image: url(../img/fon-1.jpg);
 	background: lightgray -0.677px 0px / 100.113% 193.478% no-repeat;
 	color: #fff;
+
 }
 
 .form .section_title {
