@@ -1,3 +1,20 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
+	font-display: swap;
+}
+  
+  @font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
+	font-display: swap;
+}
+
+
 *,
 *::after,
 *::before {
@@ -701,11 +718,6 @@ body {
 }
 
 /*---	Стильзация чек-боксов и радиокнопок   ---*/
-/*
-input[type="checkbox"],
-input[type="radio"] {
-	display: none;
-}*/
 
 	/*---	Добавляем отступы к соседствующим меткам   ---*/
 input[type="checkbox"] + label,
@@ -756,8 +768,8 @@ input[type="checkbox"]:not(:checked) + label:after {
 	top: 6px;
 	width: 12px;
 	height: 9px;
-	border-left: 2px solid #3F5E72;
-	border-bottom: 2px solid #3F5E72;
+	border-left: 2px solid #3f5e72;
+	border-bottom: 2px solid #3f5e72;
 	transform: rotate(-45deg);
 }
 
@@ -1571,6 +1583,38 @@ input[type="radio"]:checked + label:after {
 
 			/*---	Кнопки Применить и Сбросить   ---*/
 
+input[type="checkbox"]:checked + label:hover:before, 
+input[type="checkbox"]:not(:checked) + label:hover:before,
+input[type="radio"]:checked + label:hover:before, 
+input[type="radio"]:not(:checked) + label:hover:before {
+	opacity: 0.6;
+}
+
+.infrastructure label:hover,
+.type-of-home label:hover {
+	opacity: 0.6;
+}
+
+input[type="checkbox"]:checked + label:focus:before, 
+input[type="checkbox"]:not(:checked) + label:focus:before,
+input[type="radio"]:checked + label:focus:before, 
+input[type="radio"]:not(:checked) + label:focus:before {
+	box-shadow: 0 0 0 3px #82b3d3;
+}
+
+input[type="checkbox"]:checked + label:active:before, 
+input[type="checkbox"]:not(:checked) + label:active:before,
+input[type="radio"]:checked + label:active:before, 
+input[type="radio"]:not(:checked) + label:active:before {
+	opacity: 0.3;
+}
+
+.infrastructure label:active,
+.type-of-home label:active {
+	opacity: 0.3;
+}
+
+
 .button-aproove:hover {
 	background-color: #68a2ca;
 }
@@ -1623,7 +1667,7 @@ input[type="radio"]:checked + label:after {
 
 .more:active {
 	background-color: #756157;
-	color: rgba(255, 255, 255, 0.30);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .selected:hover {
@@ -1770,5 +1814,5 @@ input[type="radio"]:checked + label:after {
 
 .button-search:active {
 	background-color: #68a2ca;
-	color: rgba(255, 255, 255, 0.30);
+	color: rgba(255, 255, 255, 0.3);
 }
